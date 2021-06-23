@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+
+}
+.overallContainer{
+     width: 100%;
+     height: 100vh;
+    background-image: url(../img/hotel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: scroll;
+    /* background-color: #664278; */
+}
+
+
+.mainContainer{
+    width: 100%;
+    height: 80vh;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 70px; */
+    display: grid;
+    grid-template-columns: 1fr .6fr;
+    /* background-color: red; */
+   
+}
+.container1{
+    padding: 20px;
+    background: rgba(155, 6, 6, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* background-color: rgb(0, 77, 13); */    
+
+}
+.code_icon{
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    color: white;
+    /* background-color: blue; */
+}
+
+.container1_Child{
+    max-width: 500px;
+    margin: 0 auto;
+    /* background-color: red; */
+
+}
+
+.container2{
+    background-color: rgb(0, 128, 100);   
+
+}
+.h1container{
+    width: 55%;
+    /* height: 150px; */
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: white;
+     /* background-color: green; */
+    
+}
+.h1container h1{
+    font-size: 2.5rem;
+}
+.container1 .btn{
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    /* background-color: red; */
+    
+}
+#list-items{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 120px;
+    /* background-color: red; */
+
+}
+#list-items li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.innerContainer{
+    padding: 17px;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(56, 76, 27, 0.5); */
+    background-color: rgb(8, 3, 34);
+    
+    
+}
+.innerContainer h3, p{
+    color: white;
+    margin-top: 10px;
+}
+form{
+    margin-top: 30px;
+    /* height: 55vh; */
+}
+
+form input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+.inputOne{
+    display: flex;
+    padding-left: 10px;
+    border: 1px solid rgb(138, 138, 138);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* background-color: red; */
+}
+.innerContainer .fa, .fa-play{
+    margin-top: 15px;
+    color: white;
+}
+.fa-code{
+    color: white;
+    /* margin-left: 50px; */
+    
+}
+.code-btn{
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: purple;
+    color: white;
+    margin-top: 20px;
+
+}
+.code-btn-span{
+    margin-left: 45px;
+
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+
+}
+.socials .fa{
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 7px;
+    
+}
+.login{
+    margin-left: 80px;
+}
+.login a, .condition a{
+    text-decoration: none;
+} 
+.condition{
+    color: white;
+}
+.adjust{
+     position: absolute;
+    left: -35px;
+    bottom: -20px;
+
+}
+.fa-adjust{
+    color: black;
+   
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+.watch-demo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    /* text-align: center; */
+    border-radius: 30px;
+    background-color: black;
+    /* margin-left: 250px; */
+    /* background-color: red; */
+       
+}
+
+.fa-play{
+    border-radius: 50%;
+    background-color: rgb(39, 39, 38);
+    padding: 8px;
+    margin: 0;
+}
+@media only screen and (max-width: 1966px){
+
+.bars{
+    display: none;
+}
+
+}
+@media only screen and (max-width:702px){
+    .mainContainer{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .overallContainer{
+        background: rgb(8, 73, 59);
+    }
+    .bars{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 90%;
+        z-index: 60;
+        color: white;
+
+    }
+    .adjust{
+        display: none;
+    }
+    .code_icon{
+        position: absolute;
+        top: 20px;
+        left: 20px; 
+    }
+    
+   
+    .mainContainer{
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;   
+       
+    }
+    
+    #list-items{
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        margin: 0px;
+        display: none;
+        flex-direction: column;
+        background-color: rgb(121, 8, 112);
+        width: 100%;
+        padding: 20px 30px;
+        line-height: 30px;
+
+    }
+   
+    .Container2{
+        margin: 80px auto 0 auto;
+        width: 90%;
+    }
+    #list-items.open{
+        display: flex;
+        animation: moveleft .4s ease-in-out;
+        
+        
+    }
+    @keyframes moveleft {
+        from{
+            transform: translateX(-100%);
+        }
+        
+    }
+    
+    .watch-demo{
+        display: none;
+        width: 150px;
+        margin-left: 130px;
+        margin-top: 20px;
+        font-size: 8px;
+    }
+    
+   
+    .h1container{
+        display: none;
+       
+        
+    }
+    .container1{
+        background: none;
+    }
+    .login{
+        margin-left: 40px;
+    }
+    .code-btn-span{
+        margin-left: 15px;
+    
+    }
+
+}
