@@ -8,8 +8,13 @@
 }
 
 .overallContainer{
+<<<<<<< HEAD
     width: 100%;
     height: 100vh;
+=======
+     width: 100%;
+     height: 100vh;
+>>>>>>> ff2e79fe8317724519f589718c25380f0cbd6a83
     background: url(img/hotel.jpg);
     background-repeat: no-repeat;
     background-position: center;
