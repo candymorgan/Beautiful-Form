@@ -6,10 +6,11 @@
     
 
 }
+
 .overallContainer{
-     width: 100%;
-     height: 100vh;
-    background-image: url(img/hotel.jpg);
+    width: 100%;
+    height: 100vh;
+    background: url(img/hotel.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,15 +22,14 @@
 
 .mainContainer{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     max-width: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* margin-top: 70px; */
     display: grid;
-    grid-template-columns: 1fr .6fr;
+    grid-template-columns: 1fr .5fr;
     /* background-color: red; */
    
 }
@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
+    position: relative;
     /* background-color: rgb(0, 77, 13); */    
 
 }
@@ -130,6 +130,7 @@ form input{
     border-radius: 5px;
     /* background-color: red; */
 }
+
 .innerContainer .fa, .fa-play{
     margin-top: 15px;
     color: white;
@@ -223,7 +224,11 @@ form input{
 
 @media only screen and (max-width: 550px){
     .overallContainer{
-        background: rgb(8, 73, 59);
+        background: url(img/1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       
     }
     .bars{
         display: block;
@@ -266,6 +271,12 @@ form input{
         line-height: 30px;
 
     }
+    #list-items li:hover{
+        background-color: rgb(8, 3, 34);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
    
     .Container2{
         margin: 80px auto 0 auto;
